@@ -76,7 +76,7 @@ jobs:
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: List Contents of "out" Directory
-        run: ls out/ # Replace with your directory name
+        run: ls -R # Replace with your directory name
       # - name: Upload artifact
       #   uses: actions/upload-artifact@v2
       #   with:
