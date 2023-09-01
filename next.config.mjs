@@ -13,8 +13,7 @@ import { unifiedConditional } from 'unified-conditional'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
-  distDir: 'out',
+  pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx']
 }
 
 export default async function config() {
