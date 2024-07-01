@@ -19,14 +19,14 @@ import imageLaptop from '@/images/laptop.jpg'
 import { loadCaseStudies } from '@/lib/mdx'
 
 const clients = [
-  ['Eventyay', eventyay],
-  ['Chinatown Tai Chong Kok Confectionery Hue Kee', huekee],
-  ['FOSSASIA', fossasia],
-  ['Menck', menck],
-  ['Badge Magic', badgemagic],
-  ['PSLab', pslab],
-  ['SUSI.AI', susiai],
-  ['One-Stop Financial', onestopfinancial],
+  ['Eventyay', eventyay, "https://www.eventyay.com/"],
+  ['Chinatown Tai Chong Kok Confectionery Hue Kee', huekee, "https://chinatowntaichongkokconfectioneryhuekee.com/"],
+  ['FOSSASIA', fossasia, "https://fossasia.org/"],
+  ['Menck', menck, "#"],
+  ['Badge Magic', badgemagic, "https://play.google.com/store/apps/details?id=org.fossasia.badgemagic&hl=en_SG"],
+  ['PSLab', pslab, "https://pslab.io/"],
+  ['SUSI.AI', susiai, "https://susi.ai/"],
+  ['One-Stop Financial', onestopfinancial, "https://onestopfinancial.sg/"],
 ]
 
 function Clients() {
@@ -44,10 +44,12 @@ function Clients() {
             role="list"
             className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4"
           >
-            {clients.map(([client, logo]) => (
+            {clients.map(([client, logo, href]) => (
               <li key={client}>
                 <FadeIn>
+                  <Link href={href}>
                   <Image src={logo} alt={client} unoptimized />
+                  </Link>
                 </FadeIn>
               </li>
             ))}

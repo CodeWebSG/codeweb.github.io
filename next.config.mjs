@@ -14,7 +14,6 @@ import { unifiedConditional } from 'unified-conditional'
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/site',
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
   images: {
     unoptimized: true,
